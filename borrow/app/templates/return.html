@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="p-5">
+  <h1>return a thing:</h1>
+  <p>just enter ur id number and the id of the thing u want to return!</p>
+
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+
+    <p>{{ form.personId.label }}<br />{{ form.personId(size=32) }}</p>
+    <p>{{ form.thingId.label }}<br />{{ form.thingId(size=32) }}</p>
+
+    <p>{{ form.submit }}</p>
+  </form>
+</div>
+
+{% endblock %}

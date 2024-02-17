@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="p-5">
+  <h1>join:</h1>
+  <p>pick a username and u can join!</p>
+
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+
+    <p>{{ form.username.label }}<br />{{ form.username(size=32) }}</p>
+
+    <p>{{ form.submit }}</p>
+  </form>
+</div>
+
+{% endblock %}

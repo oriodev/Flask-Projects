@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block body %}
+
+<h1>friends list:</h1>
+
+<li>
+  {% for name in friendnames %}
+
+  <ul>
+    {{name}}
+  </ul>
+
+  {% endfor %}
+</li>
+
+{% endblock %}

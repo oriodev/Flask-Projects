@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="p-5">
+  <h1>leave:</h1>
+  <p>just enter ur id number and u can leave!</p>
+
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+
+    <p>{{ form.personId.label }}<br />{{ form.personId(size=32) }}</p>
+
+    <p>{{ form.submit }}</p>
+  </form>
+</div>
+
+{% endblock %}

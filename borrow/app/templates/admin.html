@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="p-5">
+  <h1>add a thing:</h1>
+  <p>just enter the name of the thing!</p>
+
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+
+    <p>{{ form.thingName.label }}<br />{{ form.thingName(size=32) }}</p>
+    <p>{{ form.submit }}</p>
+  </form>
+</div>
+
+{% endblock %}

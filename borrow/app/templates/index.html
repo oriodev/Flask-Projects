@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="p-5 d-flex justify-content-evenly">
+  <div class="">
+    <h3>here are the things u can borrow:</h3>
+    <ul>
+      {% for thing in things %}
+
+      <li>{{ thing[0] }} [ id: {{ thing[1] }} ]</li>
+
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div>
+    <h3>here are the people:</h3>
+    <ul>
+      {% for person in people %}
+
+      <li>{{ person[0] }} [ id: {{ person[1] }} ]</li>
+
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
