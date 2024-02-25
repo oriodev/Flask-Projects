@@ -1,7 +1,11 @@
 ## borrow.
+
 a flask app for a library of things! built with python, flask, and sqlite3.
 
+conda activate py312
+
 #### functionality:
+
 1. a dynamic list of things to borrow & people with membership.
 2. members can borrow things.
 3. members can return things.
